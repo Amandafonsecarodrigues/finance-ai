@@ -1,3 +1,6 @@
+//está envolta todas as paginas, todas!
+//layout do aplicativo
+
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -19,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
+  children, //children é o conteudo da página que foi configurado
 }: Readonly<{
   children: React.ReactNode;
 }>) {
