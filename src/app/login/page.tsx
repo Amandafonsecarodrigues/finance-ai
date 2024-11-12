@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "../_components/ui/button";
 import { LogInIcon } from "lucide-react";
-
+import { SignInButton } from "@clerk/nextjs";
 //sfc
 
 const LoginPage = () => {
@@ -25,10 +25,12 @@ const LoginPage = () => {
           facilitando o controle do seu orçamento.
         </p>
 
-        <Button variant="outline">
-          <LogInIcon className="mr-2" />
-          Fazer Login ou Criar Conta
-        </Button>
+        <SignInButton>
+          <Button variant="outline">
+            <LogInIcon className="mr-2" />
+            Fazer Login ou Criar Conta
+          </Button>
+        </SignInButton>
       </div>
       {/* direita */}
 
